@@ -45,6 +45,4 @@ Example:- /set_caption 📕 File Name: {filename}
 
 » 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://github.com/DX-MODS/BIXBY-RENAME-BOT>BIXBY 𝐑𝐄𝐍𝐀𝐌𝐄 𝐁𝐎𝐓</a>
 » 𝗛𝗢𝗪 𝗧𝗢 𝗗𝗘𝗣𝗟𝗢𝗬 : <a href=https://youtube.com/@DX-MODS</a>
-
-• ❣️ <a href=https://github.com/lntechnical2>𝗟𝗡 𝗧𝗘𝗖𝗛𝗡𝗜𝗖</a>
 """
