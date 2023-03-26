@@ -6,14 +6,16 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
     repo: https://github.com/DX-MODS/BIXBY-RENAME-BOT.git      
-    branch: master
+    branch: main
     envVars:
       - key: BOT_TOKEN 
         sync: false
       - key: API_ID 
         sync: false
-      - key: API_HASH 
+      - key: API_HASH
         sync: false
+      - key: WEBHOOK
+        synv: false 
       - key: FORCE_SUB 
         sync: false
       - key: DB_NAME 
@@ -24,4 +26,4 @@ services:
         sync: false
       - key: ADMIN 
         sync: false    
-    autoDeploy: false 
+    autoDeploy: false
