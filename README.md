@@ -25,3 +25,12 @@
 </a>
 </p>
 </details>
+
+<details><summary>Deploy To Render</summary>
+<p>
+<br>
+<a href="https://render.com/deploy?repo=https://github.com/DX-MODS/BIXBY-RENAME-BOT">
+  <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy">
+</a>
+</p>
+</details>
