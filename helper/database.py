@@ -1,3 +1,8 @@
+# Copyright (C) 2023 DX_MODS
+#Licensed under the  AGPL-3.0 License;
+#you may not use this file except in compliance with the License.
+#Author ZIYAN"
+
 import motor.motor_asyncio
 from config import DB_URL, DB_NAME
 
