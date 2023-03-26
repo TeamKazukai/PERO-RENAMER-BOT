@@ -1,8 +1,8 @@
 {
-    "name": "Rename Bot",
-    "description": "Telegram File Renamer Bot ",
-    "logo": "https://graph.org/file/91ab4b346dddd0652958c.jpg",
-    "keywords": ["Renamer Bot", "Mongo DB"],    
+    "name": "BIXBY-RENAME-BOT",
+    "description": "Telegram File Renamer Bot With Advanced Features",
+    "logo": "",
+    "keywords": ["TELEGRAM-BOT", "BIXBY"],    
     "repository": "https://github.com/DX-MODS/BIXBY-RENAME-BOT",
     "env": {
         "API_ID": {
@@ -12,6 +12,10 @@
         "API_HASH": {
             "description": "Your API Hash From my.telegram.org ",
             "value": ""
+        },
+        "WEBHOOK": {
+            "description": "if your server is need web service! value = True else value = False",
+            "value": "False"
         },
         "FORCE_SUB": {
             "description": "Your force sub channel user name without [@] ",
@@ -31,7 +35,7 @@
         },
         "DB_NAME":{ 
             "description":"Your Mongo DB Database Name ",
-            "value": "Cluster0",
+            "value": "Dxbotz",
             "required": false
         },
         "START_PIC": {
