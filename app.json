@@ -1,8 +1,8 @@
 {
     "name": "BIXBY-RENAME-BOT",
-    "description": "Telegram File Renamer Bot With Advanced Features",
-    "logo": "",
-    "keywords": ["TELEGRAM-BOT", "BIXBY"],    
+    "description": "Telegram File Rename Bot",
+    "logo": "https://graph.org/file/91ab4b346dddd0652958c.jpg",
+    "keywords": ["Renamer Bot", "TelegramBot"],    
     "repository": "https://github.com/DX-MODS/BIXBY-RENAME-BOT",
     "env": {
         "API_ID": {
@@ -29,13 +29,17 @@
         "ADMIN": {
             "description":"Add Your User ID multiple is use space to split"
         },
+        "LOG_CHANNEL": {
+            "description":"Bot Log Sending Channel (just create a private channel and add bot to admin and take channel id to add this variable) ⚠️ id startswith -100 must",
+            "required": false           
+        },
         "DB_URL": {
             "description": "Your Mongo DB URL Obtained From mongodb.com",
             "value": ""
         },
         "DB_NAME":{ 
             "description":"Your Mongo DB Database Name ",
-            "value": "Dxbotz",
+            "value": "DxMods",
             "required": false
         },
         "START_PIC": {
