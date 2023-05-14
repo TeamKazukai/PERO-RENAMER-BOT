@@ -1,12 +1,13 @@
 services:
   - type: web
     plan: free
-    name: Rename
+    name: BIXBY-RENAME-BOT
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py 
-    repo: https://github.com/DX-MODS/BIXBY-RENAME-BOT.git      
+    startCommand: python bot.py
+    repo: https://github.com/DX-MODS/BIXBY-RENAME-BOT.git
     branch: master
+    autoDeploy: false
     envVars:
       - key: BOT_TOKEN
         sync: false
@@ -14,9 +15,9 @@ services:
         sync: false
       - key: API_HASH
         sync: false
-      - key: WEBHOOK
-        sync: false
       - key: FORCE_SUB
+        sync: false
+      - key: LOG_CHANNEL
         sync: false
       - key: DB_NAME
         sync: false
@@ -26,4 +27,5 @@ services:
         sync: false
       - key: ADMIN
         sync: false
-    autoDeploy: false
+      - key: WEBHOOK
+        sync: false
