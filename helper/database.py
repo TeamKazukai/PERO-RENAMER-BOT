@@ -4,7 +4,8 @@
 #Author ZIYAN"
 
 import motor.motor_asyncio
-from config import DB_URL, DB_NAME
+from config import Config
+from .utils import send_log
 
 class Database:
 
@@ -20,9 +21,12 @@ class Database:
             caption=None
         )
 
-    async def add_user(self, id):
-        user = self.new_user(id)
-        await self.col.insert_one(user)
+    async def add_user(self, b, m):
+        u = m.from_user
+        if not await self.is_user_exist(u.id):
+            user = self.new_user(u.id)
+            await self.col.insert_one(user)            
+            await send_log(b, u)
 
     async def is_user_exist(self, id):
         user = await self.col.find_one({'_id': int(id)})
@@ -54,4 +58,7 @@ class Database:
         return user.get('caption', None)
 
 
-db = Database(DB_URL, DB_NAME)
+db = Database(Config.DB_URL, Config.DB_NAME)
+
+
+
