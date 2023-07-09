@@ -28,7 +28,7 @@ class Config(object):
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
     PORT = int(os.environ.get("PORT", "8080"))
     PING_INTERVAL = int(os.environ.get("PING_INTERVAL", "120"))
-
+    PING_WEB   = os.environ.get("PING_WEB", "")
 
 class Txt(object):
     # part of text configuration
