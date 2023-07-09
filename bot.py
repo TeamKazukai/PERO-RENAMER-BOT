@@ -9,7 +9,7 @@ from pyrogram.raw.all import layer
 from config import Config
 from aiohttp import web
 from route import web_server
-
+from helper.ping_server import ping_server
 class Bot(Client):
 
     def __init__(self):
