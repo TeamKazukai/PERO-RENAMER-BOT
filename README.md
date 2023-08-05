@@ -3,13 +3,13 @@
 </p>
 
 
-<a href="https://github.com/DX-MODS/SpotifyDL/stargazers"><img src="https://img.shields.io/github/stars/DX-MODS/SpotifyDL?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/DX-MODS/SpotifyDL/network/members"> <img src="https://img.shields.io/github/forks/DX-MODS/SpotifyDL?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/DX-MODS/SpotifyDL/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License- GPL 2.0 license -blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/DX-MODS/BIXBY-RENAME-BOT/stargazers"><img src="https://img.shields.io/github/stars/DX-MODS/BIXBY-RENAME-BOT?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/DX-MODS/BIXBY-RENAME-BOT/network/members"> <img src="https://img.shields.io/github/forks/DX-MODS/BIXBY-RENAME-BOT?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/DX-MODS/BIXBY-RENAME-BOT/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License- GPL 2.0 license -blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-skyblue?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://pypi.org/project/Pyrogram/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=white&label=pyrogram&logo=python&logoColor=blue&style=for-the-badge" /></a>
-<a href="https://github.com/DX-MODS/SpotifyDL"> <img src="https://img.shields.io/github/repo-size/DX-MODS/SpotifyDL?color=skyblue&logo=github&logoColor=blue&style=for-the-badge" /></a>
-<a href="https://github.com/DX-MODS/SpotifyDL/commits/DX-MODS"> <img src="https://img.shields.io/github/last-commit/DX-MODS/SpotifyDL?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/DX-MODS/BIXBY-RENAME-BOT"> <img src="https://img.shields.io/github/repo-size/DX-MODS/BIXBY-RENAME-BOT?color=skyblue&logo=github&logoColor=blue&style=for-the-badge" /></a>
+<a href="https://github.com/DX-MODS/BIXBY-RENAME-BOT/commits/DX-MODS"> <img src="https://img.shields.io/github/last-commit/DX-MODS/BIXBY-RENAME-BOT?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 
 <div align="left">
 
