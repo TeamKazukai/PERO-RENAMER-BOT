@@ -40,6 +40,5 @@ broadcast - Send Message To All Users (Admin Only)
 * [![DX-MODS](https://img.shields.io/static/v1?label=DX&message=MODS&color=critical)](https://t.me/dxmodsupdates)
 
 ## Disclaimer
-[![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
-Licensed under [GNU AGPL 2.0.](https://github.com/DX-MODS/BIXBY-RENAME-BOT/blob/master/LICENSE)
+
 Don't copy the codes and re distribute without my license and credits is strictly prohibited as per the license provided here
