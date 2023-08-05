@@ -13,51 +13,26 @@
 
 <div align="left">
 
-### Features
 
-- [x] Spotify Query Download
-- [x] Also works sharing spotify link
-- [x] Added deezer download works link
-- [x] Youtube download works link
-- [x] Admin Commands
-- [x] Broadcast
-- [x] Download lyrics
-- [x] Added server status
-- [x] Shell cmds
-- [x] terminal cmds
-more features coming soon
 
-### Railway
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/OUQm4b?referralCode=DX-MODS)
 ### Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/DX-MODS/BIXBY-RENAME-BOT&template=https://github.com/DX-MODS/BIXBY-RENAME-BOT.git)
 ### Koyeb
 Coming Soon
   
 ### Required Variables
-* `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
-* `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `ADMIN`: User ID of Admin
-* `OWNER_ID`: User ID of Owner
-* `DB_URL`: Get this value from [mongoDB](https://www.mongodb.com)
-* `DB_NAME`: Name of the database in [mongoDB](https://www.mongodb.com)
-* `SPOTIPY_CLIENT_ID`: get it from here [SpotifyDev](https://developer.spotify.com/)
-* `SPOTIPY_CLIENT_SECRET`: get it from here [SpotifyDev](https://developer.spotify.com/)
-### Optional Variables
-* `AUTH_CHATS`: Authorized Chats of bot were sends bot started message and other
-* `LOG_GROUP`: Log group were sends bots logs and errors
-* `SUDO_USERS`: User ID of sudo users
-* `BUG`: User ID were to send bugs while using plugins
-* `START_PIC`: Image that appears in start cmd
+* `BO
 ## Commands
 ```
-start - check bot alive
-ping - pong
-log - to get the rescent errors
-status - to get status of server..
-users - to get list of my users and ids.
-broadcast - to broadcast a message to all users
+start - Bot Alive Cheking
+view_thumb - View Thumbnail
+del_thumb - Delete Thumbnail
+set_caption - Set A Custom Caption
+see_caption - See Your Custom Caption
+del_caption - Delete Custom Caption
+restart - To Rrstart The Bot (Admin Only)
+status - Check Bot Status (Admin Only)
+broadcast - Send Message To All Users (Admin Only)
 ```
 
 ## TELAGRAM SUPPORT 
@@ -66,5 +41,5 @@ broadcast - to broadcast a message to all users
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
-Licensed under [GNU AGPL 2.0.](https://github.com/DX-MODS/SpotifyDL/blob/master/LICENSE)
+Licensed under [GNU AGPL 2.0.](https://github.com/DX-MODS/BIXBY-RENAME-BOT/blob/master/LICENSE)
 Don't copy the codes and re distribute without my license and credits is strictly prohibited as per the license provided here
