@@ -25,7 +25,7 @@ class Config(object):
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
     # wes response configuration     
-    WEBHOOK = bool(os.environ.get("WEBHOOK", True))
+    WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
     PORT = int(os.environ.get("PORT", "8080"))
     PING_INTERVAL = int(os.environ.get("PING_INTERVAL", "120"))
     PING_WEB   = os.environ.get("PING_WEB", "")
