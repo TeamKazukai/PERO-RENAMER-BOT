@@ -1,7 +1,7 @@
 {
     "name": "BIXBY-RENAME-BOT",
     "description": "Telegram File Rename Bot",
-    "logo": "https://graph.org/file/91ab4b346dddd0652958c.jpg",
+    "logo": "https://graph.org/file/009f013e037abaefc246c.jpg",
     "keywords": ["Renamer Bot", "TelegramBot"],    
     "repository": "https://github.com/DX-MODS/BIXBY-RENAME-BOT",
     "env": {
