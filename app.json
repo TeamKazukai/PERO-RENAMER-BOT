@@ -43,7 +43,7 @@
             "required": false
         },
         "START_PIC": {
-            "description": "Your Bot start cmd Pic from @MT_TelegraPH_Bot",
+            "description": "Your Bot start cmd Pic from @DX_telegraphbot",
             "value": "",
             "required": false
         }
