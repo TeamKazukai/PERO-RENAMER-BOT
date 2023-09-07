@@ -21,7 +21,18 @@
 Coming Soon
   
 ### Required Variables
-* `BO
+* `API_ID`: Your APP ID From my.telegram.org
+* `API_HASH`: Your API Hash From my.telegram.org
+* `BOT_TOKEN`: Your Bot Token From @BotFather
+* `ADMIN`: Add Your User ID multiple is use space to split
+* `LOG_CHANNEL`: Bot Log Sending Channel (just create a private channel and add bot to admin and take channel id to add this variable) ⚠️ id startswith -100 must
+* `FORCE_SUB`: Your force sub channel user name without [@]
+* `DB_URL`: Your Mongo DB URL Obtained From mongodb.com
+* `DB_NAME`: Your Mongo DB Database Name
+* `START_PIC`: Your Bot start cmd Pic from @DX_telegraphbot
+* `WEBHOOK`: if your server need web service! value = True else value = False
+* `PING_WEB`: the web link were your bot is deployed only fill this when your webhook is true
+
 ## Commands
 ```
 start - Bot Alive Cheking
