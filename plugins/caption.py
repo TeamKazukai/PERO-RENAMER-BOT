@@ -3,29 +3,32 @@
 #you may not use this file except in compliance with the License.
 #Author ZIYAN
 from pyrogram import Client, filters 
-from helper.database import db
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from helper.database import *
 
 @Client.on_message(filters.private & filters.command('set_caption'))
 async def add_caption(client, message):
     if len(message.command) == 1:
-       return await message.reply_text("**__Gɪᴠᴇ Tʜᴇ Cᴀᴩᴛɪᴏɴ__\n\nExᴀᴍᴩʟᴇ:- `/set_caption {filename}\n\n💾 Sɪᴢᴇ: {filesize}\n\n⏰ Dᴜʀᴀᴛɪᴏɴ: {duration}`**")
+       return await message.reply_text("**Give me a caption to set.\n\nExample:- `/set_caption File Name`**")
     caption = message.text.split(" ", 1)[1]
-    await db.set_caption(message.from_user.id, caption=caption)
-    await message.reply_text("__**✅ Cᴀᴩᴛɪᴏɴ Sᴀᴠᴇᴅ**__")
-   
+    addcaption(int(message.chat.id), caption)
+    await message.reply_text("**Your Caption successfully added ✅**")
+
 @Client.on_message(filters.private & filters.command('del_caption'))
-async def delete_caption(client, message):
-    caption = await db.get_caption(message.from_user.id)  
+async def delete_caption(client, message): 
+    caption = find(int(message.chat.id))[1]
     if not caption:
-       return await message.reply_text("__**😔 Yᴏᴜ Dᴏɴ'ᴛ Hᴀᴠᴇ Aɴy Cᴀᴩᴛɪᴏɴ**__")
-    await db.set_caption(message.from_user.id, caption=None)
-    await message.reply_text("__**❌️ Cᴀᴩᴛɪᴏɴ Dᴇʟᴇᴛᴇᴅ**__")
+        await message.reply_text("**You dont have any custom caption**")
+        return
+    delcaption(int(message.chat.id))
+    await message.reply_text("**Your caption successfully deleted ✅**")
                                        
-@Client.on_message(filters.private & filters.command(['see_caption', 'view_caption']))
-async def see_caption(client, message):
-    caption = await db.get_caption(message.from_user.id)  
+@Client.on_message(filters.private & filters.command('see_caption'))
+async def see_caption(client, message): 
+    caption = find(int(message.chat.id))[1]
     if caption:
-       await message.reply_text(f"**Yᴏᴜ'ʀᴇ Cᴀᴩᴛɪᴏɴ:-**\n\n`{caption}`")
+       await message.reply_text(f"<b><u>Your Caption:</b></u>\n\n`{caption}`")
     else:
-       await message.reply_text("__**😔 Yᴏᴜ Dᴏɴ'ᴛ Hᴀᴠᴇ Aɴy Cᴀᴩᴛɪᴏɴ**__")
+       await message.reply_text("**You dont have any custom caption**")
+          
 
