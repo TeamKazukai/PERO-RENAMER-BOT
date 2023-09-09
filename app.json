@@ -13,6 +13,10 @@
             "description": "Your API Hash From my.telegram.org ",
             "value": ""
         },
+        "PYROGRAM_SESSION": {
+            "description": "Your pyrogram session here",
+            "value": ""
+        },
         "WEBHOOK": {
             "description": "if your server is need web service! value = True else value = False",
             "value": "False"
