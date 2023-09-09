@@ -12,7 +12,7 @@ class Config(object):
     API_ID    = os.environ.get("API_ID", "")
     API_HASH  = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
-   
+    PYROGRAM_SESSION = os.environ.get("PYROGRAM_SESSION", "")
     # database config
     DB_NAME = os.environ.get("DB_NAME","Dxbotz")     
     DB_URL  = os.environ.get("DB_URL","")
