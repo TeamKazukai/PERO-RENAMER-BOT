@@ -18,15 +18,10 @@ import os
 
 log_channel = int(os.environ.get("LOG_CHANNEL", ""))
 
-API_ID = int(os.environ.get("API_ID", ""))
 
-API_HASH = os.environ.get("API_HASH", "")
-
-STRING = os.environ.get("STRING", "")
 
 ADMIN = os.environ.get("ADMIN", "")
 
-app = Client("test", api_id=API_ID, api_hash=API_HASH, session_string=STRING)
 
 
 @Client.on_callback_query(filters.regex('cancel'))
