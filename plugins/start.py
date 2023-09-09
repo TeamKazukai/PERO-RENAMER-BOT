@@ -28,17 +28,17 @@ from helper.database import daily as daily_
 
 from helper.date import check_expi
 
+from config import Config
+
 import os
 
 
 
-STRING = os.environ.get("STRING", "")
+PYROGRAM_SESSION = Config.PYROGRAM_SESSION
 
 ADMIN = int(os.environ.get("ADMIN", 1484670284))
 
 bot_username = os.environ.get("BOT_USERNAME","GangsterBaby_renamer_BOT")
-
-log_channel = int(os.environ.get("LOG_CHANNEL", ""))
 
 token = Config.BOT_TOKEN
 
@@ -212,7 +212,7 @@ async def send_doc(client, message):
 
                                          [[InlineKeyboardButton("🔺 Update Channel 🔺", url=f"https://t.me/{update_channel}")]]))
 
-            await client.send_message(log_channel,f"🦋 #GangsterBaby_LOGS 🦋,\n\n**ID** : `{user_id}`\n**Name**: {message.from_user.first_name} {message.from_user.last_name}\n**User-Plan** : {user}\n\n ",
+            await client.send_message(Config.LOG_CHANNEL,f"🦋 #GangsterBaby_LOGS 🦋,\n\n**ID** : `{user_id}`\n**Name**: {message.from_user.first_name} {message.from_user.last_name}\n**User-Plan** : {user}\n\n ",
 
                                                                                                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Restrict User ( **pm** ) 🔺", callback_data="ceasepower")]]))
 
