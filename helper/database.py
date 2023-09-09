@@ -1,9 +1,9 @@
 import pymongo
 import os
 from helper.date import add_date
-
+from config import Config
 mongo = pymongo.MongoClient(Config.DB_URL)
-db = mongo[DB_NAME]
+db = mongo[Config.DB_NAME]
 dbcol = db["user"]
 
 # Total User
