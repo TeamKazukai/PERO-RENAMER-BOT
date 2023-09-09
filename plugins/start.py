@@ -36,10 +36,6 @@ import os
 
 PYROGRAM_SESSION = Config.PYROGRAM_SESSION
 
-ADMIN = int(os.environ.get("ADMIN", 1484670284))
-
-bot_username = os.environ.get("BOT_USERNAME","GangsterBaby_renamer_BOT")
-
 token = Config.BOT_TOKEN
 
 botid = token.split(':')[0]
@@ -338,7 +334,7 @@ async def send_doc(client, message):
 
             
 
-            if STRING:
+            if PYROGRAM_SESSION:
 
                 if buy_date == None:
 
