@@ -46,8 +46,6 @@ botid = token.split(':')[0]
 
 FLOOD = 500
 
-LAZY_PIC = os.environ.get("LAZY_PIC", "")
-
 
 
 
@@ -94,7 +92,7 @@ async def start(client, message):
 
 	I am file renamer bot, Please sent any telegram**Document Or Video** and enter new filename to rename it"""
 
-        await message.reply_photo(photo=LAZY_PIC,
+        await message.reply_photo(photo=Config.START_PIC,
 
                                 caption=txt,
 
@@ -122,7 +120,7 @@ async def start(client, message):
 
                 await client.send_message(id, "Your Friend is Already Using Our Bot")
 
-                await message.reply_photo(photo=LAZY_PIC,
+                await message.reply_photo(photo=Config.START_PIC,
 
                                          caption=txt,
 
