@@ -8,11 +8,11 @@ import os
 from pyrogram import Client, filters
 from helper.date import add_date
 from helper.database import uploadlimit, usertype, addpre
-ADMIN = int(os.environ.get("ADMIN", 1484670284))
+from config import Config
 log_channel = int(os.environ.get("LOG_CHANNEL", ""))
 
 
-@Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["warn"]))
+@Client.on_message(filters.private & filters.user(Config.ADMIN) & filters.command(["warn"]))
 async def warn(c, m):
         if len(m.command) >= 3:
             try:
@@ -24,7 +24,7 @@ async def warn(c, m):
                  await m.reply_text("User Not Notfied Sucessfully 😔")
 
 
-@Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["addpremium"]))
+@Client.on_message(filters.private & filters.user(Config.ADMIN) & filters.command(["addpremium"]))
 async def buypremium(bot, message):
 	await message.reply_text("🦋 Select Plan to upgrade...", quote=True, reply_markup=InlineKeyboardMarkup([
 		           [
@@ -36,7 +36,7 @@ async def buypremium(bot, message):
 					]]))
 
 
-@Client.on_message((filters.channel | filters.private) & filters.user(ADMIN) & filters.command(["ceasepower"]))
+@Client.on_message((filters.channel | filters.private) & filters.user(Config.ADMIN) & filters.command(["ceasepower"]))
 async def ceasepremium(bot, message):
 	await message.reply_text(" POWER CEASE MODE", quote=True, reply_markup=InlineKeyboardMarkup([
 		           [InlineKeyboardButton("•× Limit 500MB ×•", callback_data="cp1"),
@@ -46,7 +46,7 @@ async def ceasepremium(bot, message):
 				    ]]))
 
 
-@Client.on_message((filters.channel | filters.private) & filters.user(ADMIN) & filters.command(["resetpower"]))
+@Client.on_message((filters.channel | filters.private) & filters.user(Config.ADMIN) & filters.command(["resetpower"]))
 async def resetpower(bot, message):
 	    await message.reply_text(text=f"Do you really want to reset daily limit to default data limit 1.2GB ?",quote=True,reply_markup=InlineKeyboardMarkup([
 		           [InlineKeyboardButton("• YES ! Set as Default •",callback_data = "dft")],
