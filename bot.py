@@ -6,6 +6,7 @@ from datetime import datetime
 from pytz import timezone
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
+from plugins.cb_data import app as Dxbot
 from config import Config
 from aiohttp import web
 from route import web_server
@@ -51,4 +52,13 @@ class Bot(Client):
             except:
                 print("Pʟᴇᴀꜱᴇ Mᴀᴋᴇ Tʜɪꜱ Iꜱ Aᴅᴍɪɴ Iɴ Yᴏᴜʀ Lᴏɢ Cʜᴀɴɴᴇʟ")
 
-Bot().run()
+if Config.PYROGRAM_SESSION:
+    apps = [Dxbot,Bot]
+    for app in apps:
+        app.start()
+    idle()
+    for app in apps:
+        app.stop()
+    
+else:
+    Bot.run()
