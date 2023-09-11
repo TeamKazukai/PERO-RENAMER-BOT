@@ -1,7 +1,7 @@
 from helper.progress import progress_for_pyrogram, TimeFormatter
 
 from pyrogram import Client, filters
-from config impprt Config
+from config import Config
 from pyrogram.types import (
     InlineKeyboardButton, InlineKeyboardMarkup, ForceReply)
 from hachoir.metadata import extractMetadata
