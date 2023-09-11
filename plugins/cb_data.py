@@ -1,6 +1,7 @@
 from helper.progress import progress_for_pyrogram, TimeFormatter
 
 from pyrogram import Client, filters
+from config impprt Config
 from pyrogram.types import (
     InlineKeyboardButton, InlineKeyboardMarkup, ForceReply)
 from hachoir.metadata import extractMetadata
@@ -22,7 +23,7 @@ log_channel = int(os.environ.get("LOG_CHANNEL", ""))
 
 ADMIN = os.environ.get("ADMIN", "")
 
-
+app = Client("test", api_id=Config.API_ID, api_hash=Config.API_HASH, session_string=Config.PYROGRAM_SESSION)
 
 @Client.on_callback_query(filters.regex('cancel'))
 async def cancel(bot, update):
