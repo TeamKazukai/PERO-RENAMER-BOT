@@ -61,4 +61,4 @@ if Config.PYROGRAM_SESSION:
         app.stop()
     
 else:
-    Bot.run()
+    Bot().run()
