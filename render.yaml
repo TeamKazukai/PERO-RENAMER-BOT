@@ -1,11 +1,11 @@
 services:
   - type: web
     plan: free
-    name: BIXBY-RENAME-BOT
+    name: PERO-RENAMER-BOT
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
-    repo: https://github.com/DX-MODS/BIXBY-RENAME-BOT.git
+    repo: https://github.com/TeamKazukai/PERO-RENAMER-BOT.git
     branch: master
     autoDeploy: false
     envVars:
